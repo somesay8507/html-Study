@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>컨테이너 요소 & 전역 속성</title>
+  </head>
+  <body>
+    <!-- 컨테이너 태그
+      콘텐츠나 레이아웃에 아무런 영향도 주지 않고, 단지 다른 요소 여럿을 묶어 관리하기
+      편하게 만드는 역할을 하는 태그를 '컨테이너' 라고 합니다. 콘텐츠 내용을 구분하거나, 공통적인 스타일을 적용하고자
+      할때 개발자는 컨테이너를 사용하는 것이 좋습니다. 
+      ex) <div>test<div> : 블록 컨테이너 / <span>test2</span 인라인 컨테이너
+       
+        전역속성: 모든 HTML 태그에서 공통으로 사용할 수 있는 속성입니다. 속성이란 태그의 부가적인 기능 정의
+                 하는 것으로 선택사항입니다. 속성은 시작 태그의 내부에 정의합니다. 속성의 개수에는 특별한 제한이 없습니다.
+                 ex) <태그명 속성명="속성값" 속성명="속성값">컨텐츠 </태그명>
+
+      대표적인 전역 속성 
+      id: 요소에 고유한 이름을 부여하는 식별자 역할 속성
+      class: 요소를 그룹별로 묶을 수 있는 식별자 역할 속성
+      style: 요소에 적용할 CSS 스타일을 선언하는 속성
+      title: 요소의 추가 정보를 제공하는 텍스트 속성 /사용자에게 툴팁 제공
+    -->
+    <h1>문서 만들기</h1>
+    <hr />
+    <h2 class="title"><span>공부</span>다짐</h2>
+    <div id="study">
+      <img
+        src="https://search.pstatic.net/common/?src=http%3A%2F%2Fblogfiles.naver.net%2FMjAyMjEwMDRfOCAg%2FMDAxNjY0ODc2ODE5NjYz.mWD6rYIipwTXQ9ky6J5bvxM_NA3YyrEw4SJTNOYMLjAg.niboRascegaP9EMrFiWzHxWtpbvZRyvsA2Lz4WrqGRkg.JPEG.sk1004akwdj%2F20220809%25A3%25DF165949.jpg&type=a340"
+        width="300" title="보노보노의 공부 다짐"
+        alt="보노보노" />
+      <p>보노보노가 조개를 들고 공부 계획표를 짜고 있네요</p>
+    </div>
+    <hr />
+    <div id="workout">
+      <h2 class="title"><span>운동</span>하기</h2>
+      <p>내 건강을 위해 살을 빼야 몸이 힘들지 않다.</p>
+    </div>
+  </body>
+</html>
