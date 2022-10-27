@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>입력 요소</title>
+  </head>
+  <body>
+    <!-- input 태그
+     입력 요소를 만드는 태그입니다.
+     type의 값에 따라 입력 요소의 형태나 입력 데이터 유형이 달라집니다.
+     사용 가능한 type은 20여 가지이며, 기본값은 text입니다.
+     name 속성으로 input 요소를 구별할 수 있습니다.
+    -->
+    <h4>입력할수 있는 요소</h4>
+    <input type="text" placeholder="메시지 입력" maxlength="5"/><br> <br>
+    <!-- 
+      placeholder 속성은 입력 필드에 사용자가 적잘한 값을 입력할 수 있도록 도와주는 짧은 도움말을 명시
+      maxlength: input값 최대길이
+     -->
+    <h4>버튼 요소</h4>
+    <input name="push" type="button" value="push"/><br> <br>
+    <h4>색상을 선택할 수 있는 요소</h4>
+    <input name="color" type="color" /><br> <br>
+    <h4>값에 범위를 지정할 수 있는 요소</h4>
+    <input name="score" type="range" max="100" min="0" step="10"/><br> <br>
+    <h4>날짜를 선택할 수 있는 요소</h4>
+    <input name="birthday" type="date" /><br> <br>
+  </body>
+</html>
