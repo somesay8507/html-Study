@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>다양한 입력 요소 만들기</title>
+  </head>
+  <body>
+    <!-- select태그
+    다수의 옵션을 포함할 수 있는 선택 메뉴입니다.
+    메뉴 안에 포함되는 옵션은 option태그를 사용해 표시합니다.
+    select에는 input 처럼 name을 지정할 수 있으며, 각각의 옵션에는
+    value를 지정하여 추후 처리를 준비합니다.
+    (자바스크립트를 통한 입력 값 처리에 value가 사용될 수 있습니다.)
+    ex) <select>
+          <option>memu1</option>
+          <option>menu2</option>
+        </select>
+
+    textarea 태그: 여러 줄의 일반 텍스트를 입력할 수 있는 입력 요소입니다. 
+    textarea도 역시 name을 추가하여 구별해줄 수 있는 입력 요소입니다.
+    ex) <textarea name="test1"><textarea>     
+    -->
+    <h1>좋아하는 축구클럽 고르기</h1>
+    <select name="footballTeam" multiple>
+      <option value="select">선택하세요..</option>
+      <option value="PSG">파리생제르맹</option>
+      <option value="tottenham" selected>토트넘</option>
+      <option value="barcelona">바르셀로나</option>
+      <option value="sscnapoli">ssc나폴리</option>
+    </select>
+    <br />
+    <textarea name="content" rows="10" cols="10">기본적으로 쓰여 있는 텍스트</textarea>
+    <!--rows: 행수 cols: 가로 넓이 -->
+  </body>
+</html>
