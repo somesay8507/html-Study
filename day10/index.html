@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>form태그</title>
+  </head>
+  <body>
+    <!-- form 태그
+    사용자가 입력한 데이터(입력값)를 서버로 보내기 위해 사용하는 태그입니다.
+    서버는 데이터를 제공하는 호스트입니다.
+    클라이언트는 데이터를 제공 받아 이용하는 사용자입니다.
+    form은 입력요소(input,select,textarea)를 감싸고 데이터를 제출 합니다.
+    form의 action은 서버 측 주소를 지정하는 속성입니다.
+    form의 method는 데이터 전송 방식을 지정하는 속성입니다.
+
+    *GET & POST*
+    GET: 서버에 요청을 보내어 응답을 받아냅니다.
+    POST: 서버에 요청을 보내어 작업을 수행합니다.
+    -->
+    <h1>좋아하는 축구클럽 고르기</h1>
+    <form action="exam.php" method="POST">
+      <input type="text" placeholder="입력" name="name">
+      <br />
+      <select name="footballTeam">
+        <option value="PSG">파리생제르맹</option>
+        <option value="tottenham" selected>토트넘</option>
+        <option value="barcelona">바르셀로나</option>
+      </select>
+      <br />
+      <input type="submit" value="전송">
+    </form>
+  </body>
+</html>
